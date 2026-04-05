@@ -1,0 +1,163 @@
+{
+  "common": {
+    "search": "Search",
+    "searchPlaceholder": "What are you looking for?",
+    "home": "Home",
+    "services": "Services",
+    "transparency": "Transparency",
+    "report": "Report",
+    "events": "News",
+    "contact": "Contact",
+    "learnMore": "Learn more",
+    "viewAll": "View all",
+    "back": "Back",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "close": "Close",
+    "loading": "Loading...",
+    "language": "Language",
+    "theme": "Theme",
+    "light": "Light",
+    "dark": "Dark",
+    "accessibility": "Accessibility",
+    "skipToContent": "Skip to main content",
+    "online": "Online",
+    "inPerson": "In person",
+    "mixed": "Mixed"
+  },
+  "home": {
+    "hero": {
+      "title": "Welcome to GenCite",
+      "subtitle": "Your commune, simplified. Access municipal services, follow council decisions and participate in local life.",
+      "cta": "Explore services"
+    },
+    "quickAccess": {
+      "title": "Quick Access",
+      "register": "Civil Registry",
+      "report": "Report an Issue",
+      "pay": "Payments",
+      "events": "Events",
+      "contact": "Contact Us",
+      "documents": "Documents"
+    },
+    "news": {
+      "title": "Municipal News",
+      "readMore": "Read more"
+    },
+    "alert": {
+      "dismiss": "Dismiss"
+    },
+    "upcomingEvents": {
+      "title": "Upcoming Events"
+    }
+  },
+  "services": {
+    "title": "Services Directory",
+    "subtitle": "Find all your commune services, online or in person.",
+    "categories": {
+      "all": "All",
+      "administrative": "Administrative",
+      "education": "Education",
+      "social": "Social",
+      "culture": "Culture",
+      "environment": "Environment",
+      "safety": "Safety"
+    },
+    "status": {
+      "online": "Online",
+      "inPerson": "In person",
+      "mixed": "Mixed"
+    },
+    "estimatedTime": "Estimated time",
+    "requiredDocs": "Required documents",
+    "noResults": "No services found."
+  },
+  "transparency": {
+    "title": "Transparency",
+    "subtitle": "Your taxes, your data. Discover how your commune uses its resources.",
+    "budget": {
+      "title": "Budget Breakdown",
+      "comparison": "Year-over-Year Comparison",
+      "current": "This year",
+      "previous": "Previous year"
+    },
+    "council": {
+      "title": "Municipal Council Decisions",
+      "approved": "Approved",
+      "rejected": "Rejected",
+      "pending": "Pending"
+    },
+    "metrics": {
+      "title": "Key Metrics",
+      "population": "Population",
+      "budgetPerCapita": "Budget per Capita",
+      "greenSpace": "Green Space per Resident",
+      "satisfaction": "Satisfaction Rate"
+    }
+  },
+  "report": {
+    "title": "Report an Issue",
+    "subtitle": "Help us improve your commune. Report a problem and track its progress.",
+    "form": {
+      "category": "Category",
+      "location": "Address / Location",
+      "locationPlaceholder": "E.g., 15 Rue du Marche",
+      "description": "Description",
+      "descriptionPlaceholder": "Describe the issue in detail...",
+      "title": "Title",
+      "titlePlaceholder": "Summarize the issue in a few words",
+      "photo": "Add a photo",
+      "submit": "Submit report"
+    },
+    "categories": {
+      "infrastructure": "Infrastructure",
+      "cleanliness": "Cleanliness",
+      "safety": "Safety",
+      "noise": "Noise",
+      "greenSpaces": "Green Spaces",
+      "other": "Other"
+    },
+    "status": {
+      "received": "Received",
+      "underReview": "Under Review",
+      "inProgress": "In Progress",
+      "resolved": "Resolved"
+    },
+    "recentReports": "Recent Reports",
+    "successMessage": "Your report has been submitted successfully!"
+  },
+  "events": {
+    "title": "Events & News",
+    "subtitle": "Stay informed about community life.",
+    "categories": {
+      "all": "All",
+      "culture": "Culture",
+      "sports": "Sports",
+      "family": "Family",
+      "senior": "Senior",
+      "community": "Community"
+    },
+    "upcoming": "Upcoming Events",
+    "news": "News"
+  },
+  "contact": {
+    "title": "Contact & FAQ",
+    "subtitle": "Find contact information for each department and answers to your questions.",
+    "departments": "Municipal Departments",
+    "faq": "Frequently Asked Questions",
+    "hours": "Opening Hours",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address"
+  },
+  "footer": {
+    "description": "GenCite - Your digital commune portal, designed for accessibility, transparency and citizen service.",
+    "quickLinks": "Quick Links",
+    "legal": "Legal Information",
+    "accessibilityStatement": "Accessibility Statement",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use",
+    "copyright": "All rights reserved.",
+    "designedBy": "Designed by"
+  }
+}

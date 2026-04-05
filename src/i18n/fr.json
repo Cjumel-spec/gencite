@@ -1,0 +1,163 @@
+{
+  "common": {
+    "search": "Rechercher",
+    "searchPlaceholder": "Que recherchez-vous ?",
+    "home": "Accueil",
+    "services": "Services",
+    "transparency": "Transparence",
+    "report": "Signalement",
+    "events": "Actualites",
+    "contact": "Contact",
+    "learnMore": "En savoir plus",
+    "viewAll": "Voir tout",
+    "back": "Retour",
+    "submit": "Soumettre",
+    "cancel": "Annuler",
+    "close": "Fermer",
+    "loading": "Chargement...",
+    "language": "Langue",
+    "theme": "Theme",
+    "light": "Clair",
+    "dark": "Sombre",
+    "accessibility": "Accessibilite",
+    "skipToContent": "Aller au contenu principal",
+    "online": "En ligne",
+    "inPerson": "Sur place",
+    "mixed": "Mixte"
+  },
+  "home": {
+    "hero": {
+      "title": "Bienvenue a GenCite",
+      "subtitle": "Votre commune, simplifiee. Accedez aux services municipaux, suivez les decisions du conseil et participez a la vie locale.",
+      "cta": "Explorer les services"
+    },
+    "quickAccess": {
+      "title": "Acces rapide",
+      "register": "Etat civil",
+      "report": "Signaler un probleme",
+      "pay": "Paiements",
+      "events": "Evenements",
+      "contact": "Nous contacter",
+      "documents": "Documents"
+    },
+    "news": {
+      "title": "Actualites municipales",
+      "readMore": "Lire la suite"
+    },
+    "alert": {
+      "dismiss": "Fermer"
+    },
+    "upcomingEvents": {
+      "title": "Evenements a venir"
+    }
+  },
+  "services": {
+    "title": "Annuaire des services",
+    "subtitle": "Retrouvez tous les services de votre commune, en ligne ou en personne.",
+    "categories": {
+      "all": "Tous",
+      "administrative": "Administratif",
+      "education": "Education",
+      "social": "Social",
+      "culture": "Culture",
+      "environment": "Environnement",
+      "safety": "Securite"
+    },
+    "status": {
+      "online": "En ligne",
+      "inPerson": "Sur place",
+      "mixed": "Mixte"
+    },
+    "estimatedTime": "Delai estime",
+    "requiredDocs": "Documents requis",
+    "noResults": "Aucun service trouve."
+  },
+  "transparency": {
+    "title": "Transparence",
+    "subtitle": "Vos impots, vos donnees. Decouvrez comment votre commune utilise ses ressources.",
+    "budget": {
+      "title": "Repartition du budget",
+      "comparison": "Comparaison annuelle",
+      "current": "Cette annee",
+      "previous": "Annee precedente"
+    },
+    "council": {
+      "title": "Decisions du Conseil municipal",
+      "approved": "Approuve",
+      "rejected": "Rejete",
+      "pending": "En attente"
+    },
+    "metrics": {
+      "title": "Indicateurs cles",
+      "population": "Population",
+      "budgetPerCapita": "Budget par habitant",
+      "greenSpace": "Espaces verts par habitant",
+      "satisfaction": "Taux de satisfaction"
+    }
+  },
+  "report": {
+    "title": "Signaler un probleme",
+    "subtitle": "Aidez-nous a ameliorer votre commune. Signalez un probleme et suivez son avancement.",
+    "form": {
+      "category": "Categorie",
+      "location": "Adresse / Lieu",
+      "locationPlaceholder": "Ex: Rue du Marche 15",
+      "description": "Description",
+      "descriptionPlaceholder": "Decrivez le probleme en detail...",
+      "title": "Titre",
+      "titlePlaceholder": "Resumez le probleme en quelques mots",
+      "photo": "Ajouter une photo",
+      "submit": "Envoyer le signalement"
+    },
+    "categories": {
+      "infrastructure": "Infrastructure",
+      "cleanliness": "Proprete",
+      "safety": "Securite",
+      "noise": "Bruit",
+      "greenSpaces": "Espaces verts",
+      "other": "Autre"
+    },
+    "status": {
+      "received": "Recu",
+      "underReview": "En examen",
+      "inProgress": "En cours",
+      "resolved": "Resolu"
+    },
+    "recentReports": "Signalements recents",
+    "successMessage": "Votre signalement a ete envoye avec succes !"
+  },
+  "events": {
+    "title": "Evenements & Actualites",
+    "subtitle": "Restez informe de la vie communale.",
+    "categories": {
+      "all": "Tous",
+      "culture": "Culture",
+      "sports": "Sports",
+      "family": "Famille",
+      "senior": "Aines",
+      "community": "Communaute"
+    },
+    "upcoming": "Evenements a venir",
+    "news": "Actualites"
+  },
+  "contact": {
+    "title": "Contact & FAQ",
+    "subtitle": "Trouvez les informations de contact de chaque service et les reponses a vos questions.",
+    "departments": "Services municipaux",
+    "faq": "Questions frequentes",
+    "hours": "Horaires d'ouverture",
+    "phone": "Telephone",
+    "email": "Email",
+    "address": "Adresse"
+  },
+  "footer": {
+    "description": "GenCite - Votre portail communal numerique, concu pour l'accessibilite, la transparence et le service aux citoyens.",
+    "quickLinks": "Liens rapides",
+    "legal": "Informations legales",
+    "accessibilityStatement": "Declaration d'accessibilite",
+    "privacy": "Politique de confidentialite",
+    "terms": "Conditions d'utilisation",
+    "copyright": "Tous droits reserves.",
+    "designedBy": "Concu par"
+  }
+}

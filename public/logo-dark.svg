@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 85" width="300" height="85">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&amp;family=Playfair+Display:wght@700&amp;family=Montserrat:wght@300&amp;display=swap');
+    </style>
+  </defs>
+  <!-- Cercle outline blanc semi-transparent -->
+  <circle cx="42" cy="42" r="38" fill="none" stroke="white" stroke-width="2.5" opacity="0.4"/>
+  <!-- Cercle plein intérieur semi-transparent -->
+  <circle cx="42" cy="42" r="30" fill="white" opacity="0.15"/>
+  <!-- Initiales JS -->
+  <text x="42" y="54" font-family="'Cormorant Garamond', Georgia, serif" font-size="30" font-weight="600" fill="white" text-anchor="middle">JS</text>
+  <!-- JUMEL -->
+  <text x="98" y="36" font-family="'Playfair Display', Georgia, serif" font-size="22" font-weight="700" fill="white" letter-spacing="1">JUMEL</text>
+  <!-- Ligne or -->
+  <rect x="98" y="43" width="186" height="1.2" fill="#C8A96E" opacity="0.85"/>
+  <!-- STUDIO -->
+  <text x="99" y="59" font-family="'Montserrat', Arial, sans-serif" font-size="10" font-weight="300" fill="white" letter-spacing="9" opacity="0.75">STUDIO</text>
+</svg>
