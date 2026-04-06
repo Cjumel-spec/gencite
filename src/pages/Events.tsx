@@ -18,8 +18,9 @@ const categoryColors: Record<EventCategory, string> = {
 };
 
 export default function Events() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [activeCategory, setActiveCategory] = useState<EventCategory | 'all'>('all');
+  const dateLocale = i18n.language === 'fr' ? 'fr-CH' : 'en-CH';
 
   const filteredEvents = useMemo(() => {
     if (activeCategory === 'all') return events;
@@ -58,20 +59,20 @@ export default function Events() {
                 <div className="p-5">
                   <div className="mb-3 flex items-start gap-3">
                     <div className="flex h-14 w-14 shrink-0 flex-col items-center justify-center rounded-xl bg-tertiary">
-                      <span className="text-xs font-semibold uppercase text-muted">{date.toLocaleDateString('fr-CH', { month: 'short' })}</span>
+                      <span className="text-xs font-semibold uppercase text-muted">{date.toLocaleDateString(dateLocale, { month: 'short' })}</span>
                       <span className="text-xl font-bold leading-tight text-heading">{date.getDate()}</span>
                     </div>
                     <div>
                       <span className="mb-1 inline-block rounded-full px-2 py-0.5 text-xs font-medium text-white" style={{ backgroundColor: color }}>
                         {t(`events.categories.${event.category}`)}
                       </span>
-                      <h3 className="text-sm font-semibold text-heading">{event.title}</h3>
+                      <h3 className="text-sm font-semibold text-heading">{t(`events.items.${event.id}.title`)}</h3>
                     </div>
                   </div>
-                  <p className="mb-3 text-sm text-body">{event.description}</p>
+                  <p className="mb-3 text-sm text-body">{t(`events.items.${event.id}.description`)}</p>
                   <div className="flex flex-wrap items-center gap-4 text-xs text-muted">
                     <span className="flex items-center gap-1"><Clock className="h-3.5 w-3.5" />{event.time}</span>
-                    <span className="flex items-center gap-1"><MapPin className="h-3.5 w-3.5" />{event.location}</span>
+                    <span className="flex items-center gap-1"><MapPin className="h-3.5 w-3.5" />{t(`events.items.${event.id}.location`)}</span>
                   </div>
                 </div>
               </motion.article>
@@ -91,11 +92,11 @@ export default function Events() {
               </div>
               <div>
                 <div className="mb-1 flex items-center gap-3">
-                  <span className="rounded-full bg-tertiary px-2.5 py-0.5 text-xs font-medium text-body">{article.category}</span>
-                  <time className="text-xs text-muted">{new Date(article.date).toLocaleDateString('fr-CH')}</time>
+                  <span className="rounded-full bg-tertiary px-2.5 py-0.5 text-xs font-medium text-body">{t(`events.newsItems.${article.id}.category`)}</span>
+                  <time className="text-xs text-muted">{new Date(article.date).toLocaleDateString(dateLocale)}</time>
                 </div>
-                <h3 className="mb-1 text-sm font-semibold text-heading">{article.title}</h3>
-                <p className="text-sm text-body">{article.summary}</p>
+                <h3 className="mb-1 text-sm font-semibold text-heading">{t(`events.newsItems.${article.id}.title`)}</h3>
+                <p className="text-sm text-body">{t(`events.newsItems.${article.id}.summary`)}</p>
               </div>
             </motion.article>
           ))}

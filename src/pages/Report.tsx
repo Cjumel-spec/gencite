@@ -135,7 +135,7 @@ export default function Report() {
               return (
                 <article key={report.id} className="rounded-xl border border-default bg-card p-4 shadow-card">
                   <div className="mb-2 flex items-start justify-between">
-                    <h3 className="text-sm font-semibold text-heading">{report.title}</h3>
+                    <h3 className="text-sm font-semibold text-heading">{t(`report.reports.${report.id}.title`)}</h3>
                     <span className="flex items-center gap-1 text-xs text-muted"><ThumbsUp className="h-3 w-3" />{report.votes}</span>
                   </div>
                   <p className="mb-3 text-xs text-muted"><MapPin className="mr-1 inline h-3 w-3" />{report.location}</p>

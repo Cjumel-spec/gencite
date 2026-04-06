@@ -55,7 +55,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="mb-3 text-sm font-semibold text-heading">Contact</h3>
+            <h3 className="mb-3 text-sm font-semibold text-heading">{t('footer.contact')}</h3>
             <address className="space-y-2 not-italic text-sm text-muted">
               <p>Place de la Mairie 1</p>
               <p>1200 GenCité, Suisse</p>

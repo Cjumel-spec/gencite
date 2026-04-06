@@ -45,7 +45,8 @@
       "readMore": "Lire la suite"
     },
     "alert": {
-      "dismiss": "Fermer"
+      "dismiss": "Fermer",
+      "text": "Collecte de dechets electroniques — Samedi 19 avril, 9h-16h, Parking Salle Communale"
     },
     "upcomingEvents": {
       "title": "Evenements a venir"
@@ -70,7 +71,23 @@
     },
     "estimatedTime": "Delai estime",
     "requiredDocs": "Documents requis",
-    "noResults": "Aucun service trouve."
+    "noResults": "Aucun service trouve.",
+    "items": {
+      "civil-registry": { "name": "Etat civil", "docs": ["Piece d'identite", "Justificatif de domicile"] },
+      "building-permits": { "name": "Permis de construire", "docs": ["Plans architecturaux", "Formulaire de demande", "Titre de propriete"] },
+      "parking-permits": { "name": "Macarons de stationnement", "docs": ["Carte grise", "Piece d'identite"] },
+      "school-enrollment": { "name": "Inscription scolaire", "docs": ["Certificat de naissance", "Justificatif de domicile", "Carnet de vaccination"] },
+      "library": { "name": "Bibliotheque", "docs": ["Piece d'identite"] },
+      "extracurricular": { "name": "Activites parascolaires", "docs": ["Certificat medical (pour sports)"] },
+      "social-aid": { "name": "Aide sociale", "docs": ["Piece d'identite", "Justificatifs de revenus", "Attestation de domicile"] },
+      "senior-services": { "name": "Services aux aines", "docs": ["Piece d'identite"] },
+      "cultural-events": { "name": "Evenements culturels", "docs": [] },
+      "venue-rental": { "name": "Location de salles", "docs": ["Formulaire de reservation", "Assurance responsabilite civile"] },
+      "waste-collection": { "name": "Collecte des dechets", "docs": [] },
+      "green-initiatives": { "name": "Initiatives vertes", "docs": ["Formulaire de participation"] },
+      "emergency-contacts": { "name": "Contacts d'urgence", "docs": [] },
+      "noise-complaint": { "name": "Plainte pour bruit", "docs": ["Description detaillee"] }
+    }
   },
   "transparency": {
     "title": "Transparence",
@@ -79,13 +96,24 @@
       "title": "Repartition du budget",
       "comparison": "Comparaison annuelle",
       "current": "Cette annee",
-      "previous": "Annee precedente"
+      "previous": "Annee precedente",
+      "categories": {
+        "Education": "Education",
+        "Infrastructure": "Infrastructure",
+        "Social": "Social",
+        "Culture": "Culture",
+        "Administration": "Administration",
+        "Safety": "Securite"
+      }
     },
     "council": {
       "title": "Decisions du Conseil municipal",
       "approved": "Approuve",
       "rejected": "Rejete",
-      "pending": "En attente"
+      "pending": "En attente",
+      "votesFor": "Pour",
+      "votesAgainst": "Contre",
+      "abstentions": "Abstentions"
     },
     "metrics": {
       "title": "Indicateurs cles",
@@ -93,6 +121,13 @@
       "budgetPerCapita": "Budget par habitant",
       "greenSpace": "Espaces verts par habitant",
       "satisfaction": "Taux de satisfaction"
+    },
+    "decisions": {
+      "cd-1": { "title": "Renovation de la Place Centrale", "summary": "Approbation du budget de 2.4M CHF pour la renovation complete de la Place Centrale, incluant un nouvel eclairage, des bancs et une fontaine." },
+      "cd-2": { "title": "Zone 30 km/h Quartier des Ecoles", "summary": "Extension de la zone 30 km/h autour des ecoles primaires et du college pour ameliorer la securite des enfants." },
+      "cd-3": { "title": "Nouveau Centre Sportif Municipal", "summary": "Proposition de construction d'un nouveau centre sportif avec piscine olympique. Budget estime: 15M CHF." },
+      "cd-4": { "title": "Subvention Panneaux Solaires", "summary": "Programme de subventions pour l'installation de panneaux solaires sur les toitures des residences privees." },
+      "cd-5": { "title": "Privatisation du Stationnement", "summary": "Proposition de deleguer la gestion des parkings municipaux a une entreprise privee." }
     }
   },
   "report": {
@@ -124,7 +159,14 @@
       "resolved": "Resolu"
     },
     "recentReports": "Signalements recents",
-    "successMessage": "Votre signalement a ete envoye avec succes !"
+    "successMessage": "Votre signalement a ete envoye avec succes !",
+    "reports": {
+      "r-1": { "title": "Nid-de-poule Rue de la Gare", "description": "Un nid-de-poule important s'est forme devant le numero 23, dangereux pour les cyclistes." },
+      "r-2": { "title": "Depots sauvages Parc des Tilleuls", "description": "Des dechets encombrants ont ete abandonnes pres de l'entree sud du parc." },
+      "r-3": { "title": "Eclairage defaillant Chemin du Lac", "description": "Trois lampadaires ne fonctionnent plus depuis une semaine, rendant le chemin dangereux la nuit." },
+      "r-4": { "title": "Arbre tombe Route de Meyrin", "description": "Un arbre est tombe sur le trottoir apres la tempete de mardi, bloquant partiellement le passage." },
+      "r-5": { "title": "Chantier nocturne Place du Marche", "description": "Travaux de chantier bruyants apres 22h plusieurs nuits de suite." }
+    }
   },
   "events": {
     "title": "Evenements & Actualites",
@@ -138,7 +180,21 @@
       "community": "Communaute"
     },
     "upcoming": "Evenements a venir",
-    "news": "Actualites"
+    "news": "Actualites",
+    "items": {
+      "e-1": { "title": "Festival de Musique de Printemps", "description": "Concert en plein air avec des artistes locaux et regionaux. Entree libre.", "location": "Place Centrale" },
+      "e-2": { "title": "Course des Communes 10km", "description": "Course populaire ouverte a tous. Inscription en ligne ou sur place des 8h.", "location": "Depart: Parc des Sports" },
+      "e-3": { "title": "Chasse aux oeufs de Paques", "description": "Activite pour les enfants de 3 a 10 ans. Gouter offert.", "location": "Parc des Tilleuls" },
+      "e-4": { "title": "Apres-midi Jeux de Societe", "description": "Rencontre intergenerationnelle autour de jeux de societe. The et biscuits offerts.", "location": "Maison de Quartier" },
+      "e-5": { "title": "Assemblee Communale", "description": "Assemblee ouverte a tous les residents. Ordre du jour: budget 2026 et projets d'infrastructure.", "location": "Salle Communale" },
+      "e-6": { "title": "Exposition Art Local", "description": "Exposition d'artistes locaux. Vernissage le 4 mai a 18h.", "location": "Galerie Municipale" }
+    },
+    "newsItems": {
+      "n-1": { "title": "Nouvelle piste cyclable inauguree", "summary": "La nouvelle piste cyclable reliant le centre-ville a la gare a ete inauguree ce matin. Longue de 2.3 km, elle ameliore la securite des cyclistes.", "category": "Infrastructure" },
+      "n-2": { "title": "Budget 2026 adopte a large majorite", "summary": "Le Conseil municipal a approuve le budget 2026 de 40M CHF, en hausse de 5% par rapport a l'annee precedente. L'education reste la priorite.", "category": "Politique" },
+      "n-3": { "title": "Collecte de dechets electroniques", "summary": "Une collecte speciale de dechets electroniques aura lieu le samedi 19 avril au parking de la salle communale, de 9h a 16h.", "category": "Environnement" },
+      "n-4": { "title": "Inscription creche : ouverture des demandes", "summary": "Les demandes d'inscription pour les creches communales 2026-2027 sont ouvertes jusqu'au 15 mai. Formulaire disponible en ligne.", "category": "Education" }
+    }
   },
   "contact": {
     "title": "Contact & FAQ",
@@ -148,7 +204,29 @@
     "hours": "Horaires d'ouverture",
     "phone": "Telephone",
     "email": "Email",
-    "address": "Adresse"
+    "address": "Adresse",
+    "departmentNames": {
+      "administration": "Administration generale",
+      "education": "Education et jeunesse",
+      "social": "Affaires sociales",
+      "technical": "Services techniques",
+      "culture": "Culture et loisirs"
+    },
+    "departmentHours": {
+      "administration": "Lun-Ven: 8h00-12h00, 13h30-17h00",
+      "education": "Lun-Ven: 8h00-12h00, 13h30-16h30",
+      "social": "Lun-Ven: 9h00-12h00, 14h00-17h00",
+      "technical": "Lun-Ven: 7h30-12h00, 13h00-16h30",
+      "culture": "Mar-Sam: 9h00-12h00, 14h00-18h00"
+    },
+    "faqs": {
+      "faq-1": { "question": "Comment obtenir une attestation de domicile ?", "answer": "Rendez-vous sur la page Services > Etat civil et remplissez le formulaire en ligne. Vous recevrez votre attestation par email sous 48h. Vous pouvez aussi vous rendre au guichet avec une piece d'identite." },
+      "faq-2": { "question": "Quels sont les horaires de la dechetterie ?", "answer": "La dechetterie est ouverte du mardi au samedi de 8h00 a 12h00 et de 13h30 a 17h30. Fermee les dimanches, lundis et jours feries." },
+      "faq-3": { "question": "Comment inscrire mon enfant a l'ecole ?", "answer": "Les inscriptions se font en ligne via la page Services > Inscription scolaire. Vous aurez besoin du certificat de naissance, d'un justificatif de domicile et du carnet de vaccination. Delai: avant le 31 mars pour la rentree de septembre." },
+      "faq-4": { "question": "Comment signaler un probleme dans ma rue ?", "answer": "Utilisez notre page Signalement pour reporter tout probleme (eclairage, voirie, proprete, etc.). Vous pourrez suivre l'avancement de votre signalement en temps reel." },
+      "faq-5": { "question": "Ou trouver les proces-verbaux du Conseil municipal ?", "answer": "Tous les proces-verbaux sont disponibles sur la page Transparence. Vous y trouverez les decisions du Conseil, les resultats des votes et les budgets detailles." },
+      "faq-6": { "question": "Comment reserver une salle communale ?", "answer": "Les demandes de reservation se font via le formulaire en ligne sur la page Services > Location de salles. Prevoyez un delai de 2 semaines minimum. Une assurance responsabilite civile est requise." }
+    }
   },
   "footer": {
     "description": "GenCite - Votre portail communal numerique, concu pour l'accessibilite, la transparence et le service aux citoyens.",
@@ -158,6 +236,46 @@
     "privacy": "Politique de confidentialite",
     "terms": "Conditions d'utilisation",
     "copyright": "Tous droits reserves.",
-    "designedBy": "Concu par"
+    "designedBy": "Concu par",
+    "contact": "Contact"
+  },
+  "accessibility": {
+    "title": "Declaration d'accessibilite",
+    "intro": "GenCite s'engage a rendre ses services numeriques accessibles a tous les citoyens, conformement aux directives WCAG 2.1 niveau AA.",
+    "commitmentTitle": "Notre engagement",
+    "commitmentText": "En tant que portail de service public, nous croyons que l'acces a l'information et aux services municipaux est un droit fondamental. Nous travaillons continuellement a ameliorer l'accessibilite de notre plateforme pour garantir que chaque citoyen, quelles que soient ses capacites, puisse utiliser nos services.",
+    "featuresTitle": "Fonctionnalites d'accessibilite",
+    "reportTitle": "Signaler un probleme d'accessibilite",
+    "reportText": "Si vous rencontrez un probleme d'accessibilite sur notre plateforme, contactez-nous a accessibilite@gencite.ch. Nous nous engageons a repondre sous 5 jours ouvrables.",
+    "features": {
+      "contrast": { "title": "Contraste et lisibilite", "description": "Ratio de contraste minimum de 4.5:1 sur tous les textes. Mode sombre et clair disponibles." },
+      "keyboard": { "title": "Navigation au clavier", "description": "Tous les elements interactifs sont accessibles au clavier avec des indicateurs de focus visibles." },
+      "responsive": { "title": "Design responsive", "description": "Interface adaptee a tous les ecrans, du mobile au grand ecran. Zoom jusqu'a 200% sans perte." },
+      "multilingual": { "title": "Multilingue", "description": "Contenu disponible en francais et en anglais. Attribut lang mis a jour dynamiquement." },
+      "screenReaders": { "title": "Lecteurs d'ecran", "description": "HTML semantique, landmarks ARIA et attributs alt sur toutes les images." },
+      "reducedMotion": { "title": "Mouvement reduit", "description": "Respect de la preference prefers-reduced-motion. Animations desactivees automatiquement." }
+    }
+  },
+  "privacy": {
+    "title": "Politique de confidentialite",
+    "lastUpdated": "Derniere mise a jour: avril 2026",
+    "intro": "GenCite respecte votre vie privee et s'engage a proteger vos donnees personnelles conformement a la Loi federale sur la protection des donnees (LPD) et au Reglement general sur la protection des donnees (RGPD).",
+    "dpoContact": "Contact DPO",
+    "sections": {
+      "dataCollected": { "title": "Donnees collectees", "content": "Nous collectons uniquement les donnees necessaires au bon fonctionnement des services municipaux: noms, adresses, coordonnees. Aucune donnee n'est vendue a des tiers." },
+      "dataSecurity": { "title": "Securite des donnees", "content": "Vos donnees sont chiffrees en transit (TLS 1.3) et au repos. Nos serveurs sont heberges en Suisse, conformement a la LPD." },
+      "yourRights": { "title": "Vos droits", "content": "Vous avez le droit d'acceder, de rectifier et de supprimer vos donnees personnelles. Contactez notre DPO a dpo@gencite.ch." },
+      "retention": { "title": "Conservation", "content": "Les donnees sont conservees pour la duree necessaire aux finalites pour lesquelles elles ont ete collectees, puis supprimees de maniere securisee." }
+    }
+  },
+  "terms": {
+    "title": "Conditions d'utilisation",
+    "lastUpdated": "Derniere mise a jour: avril 2026",
+    "sections": {
+      "portalUsage": { "title": "Utilisation du portail", "content": "Le portail GenCite est mis a disposition des citoyens et residents de la commune. L'utilisation est gratuite et soumise aux presentes conditions. Tout usage abusif ou frauduleux est interdit." },
+      "contentOwnership": { "title": "Contenu et propriete", "content": "Le contenu de ce portail est la propriete de la commune de GenCite. La reproduction est autorisee a des fins non commerciales avec mention de la source." },
+      "liability": { "title": "Responsabilite", "content": "La commune s'efforce de fournir des informations exactes et a jour. Toutefois, elle ne garantit pas l'exhaustivite ou l'exactitude des contenus. Les demarches officielles restent soumises a verification." },
+      "applicableLaw": { "title": "Droit applicable", "content": "Les presentes conditions sont soumises au droit suisse. Le for juridique est le tribunal competent du canton dans lequel se situe la commune." }
+    }
   }
 }

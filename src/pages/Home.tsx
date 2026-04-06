@@ -27,8 +27,9 @@ const quickAccessItems = [
 ];
 
 export default function Home() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [alertVisible, setAlertVisible] = useState(true);
+  const dateLocale = i18n.language === 'fr' ? 'fr-CH' : 'en-CH';
 
   const upcomingEvents = events.slice(0, 3);
   const latestNews = news.slice(0, 3);
@@ -46,7 +47,7 @@ export default function Home() {
           <div className="flex items-center gap-3">
             <AlertTriangle className="h-5 w-5 shrink-0 text-amber-600" />
             <p className="text-sm font-medium text-amber-800">
-              Collecte de dechets electroniques — Samedi 19 avril, 9h-16h, Parking Salle Communale
+              {t('home.alert.text')}
             </p>
           </div>
           <button
@@ -142,14 +143,14 @@ export default function Home() {
               >
                 <div className="mb-2 flex items-center gap-3">
                   <span className="rounded-full bg-accent-light px-2.5 py-0.5 text-xs font-medium text-accent">
-                    {article.category}
+                    {t(`events.newsItems.${article.id}.category`)}
                   </span>
                   <time className="text-xs text-muted">
-                    {new Date(article.date).toLocaleDateString('fr-CH')}
+                    {new Date(article.date).toLocaleDateString(dateLocale)}
                   </time>
                 </div>
-                <h3 className="mb-1.5 text-base font-semibold text-heading">{article.title}</h3>
-                <p className="text-sm leading-relaxed text-body">{article.summary}</p>
+                <h3 className="mb-1.5 text-base font-semibold text-heading">{t(`events.newsItems.${article.id}.title`)}</h3>
+                <p className="text-sm leading-relaxed text-body">{t(`events.newsItems.${article.id}.summary`)}</p>
               </motion.article>
             ))}
           </div>
@@ -181,20 +182,20 @@ export default function Home() {
                 <div className="flex items-start gap-3">
                   <div className="flex h-12 w-12 shrink-0 flex-col items-center justify-center rounded-lg bg-accent-light">
                     <span className="text-xs font-medium text-accent">
-                      {new Date(event.date).toLocaleDateString('fr-CH', { month: 'short' }).toUpperCase()}
+                      {new Date(event.date).toLocaleDateString(dateLocale, { month: 'short' }).toUpperCase()}
                     </span>
                     <span className="text-lg font-bold leading-tight text-accent">
                       {new Date(event.date).getDate()}
                     </span>
                   </div>
                   <div className="min-w-0">
-                    <h3 className="text-sm font-semibold text-heading">{event.title}</h3>
+                    <h3 className="text-sm font-semibold text-heading">{t(`events.items.${event.id}.title`)}</h3>
                     <div className="mt-1 flex flex-wrap items-center gap-3 text-xs text-muted">
                       <span className="flex items-center gap-1">
                         <Clock className="h-3 w-3" /> {event.time}
                       </span>
                       <span className="flex items-center gap-1">
-                        <MapPin className="h-3 w-3" /> {event.location}
+                        <MapPin className="h-3 w-3" /> {t(`events.items.${event.id}.location`)}
                       </span>
                     </div>
                   </div>

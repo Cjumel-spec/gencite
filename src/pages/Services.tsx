@@ -36,7 +36,7 @@ export default function Services() {
   const filtered = useMemo(() => {
     return services.filter((s) => {
       const matchesCategory = activeCategory === 'all' || s.category === activeCategory;
-      const name = t(`services.categories.${s.category}`) + ' ' + s.id;
+      const name = t(`services.items.${s.id}.name`) + ' ' + t(`services.categories.${s.category}`);
       const matchesSearch = name.toLowerCase().includes(search.toLowerCase());
       return matchesCategory && matchesSearch;
     });
@@ -115,7 +115,7 @@ export default function Services() {
                 </div>
                 <div className="min-w-0">
                   <h3 className="mb-1 text-sm font-semibold text-heading">
-                    {service.id.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')}
+                    {t(`services.items.${service.id}.name`)}
                   </h3>
                   <div className="flex flex-wrap items-center gap-2">
                     <span className={`rounded-full px-2 py-0.5 text-xs font-medium ${statusClass}`}>
@@ -168,7 +168,7 @@ export default function Services() {
                       </div>
                       <div>
                         <h2 className="text-lg font-bold text-heading">
-                          {selected.id.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')}
+                          {t(`services.items.${selected.id}.name`)}
                         </h2>
                         <span className={`inline-block rounded-full px-2 py-0.5 text-xs font-medium ${statusClass}`}>
                           {t(`services.status.${selected.status}`)}
@@ -178,11 +178,11 @@ export default function Services() {
                     <div className="mb-4 flex items-center gap-2 text-sm text-body">
                       <Clock className="h-4 w-4" /> {t('services.estimatedTime')}: {selected.estimatedTime}
                     </div>
-                    {selected.requiredDocs.length > 0 && (
+                    {(t(`services.items.${selected.id}.docs`, { returnObjects: true }) as string[]).length > 0 && (
                       <div className="mb-6">
                         <h3 className="mb-2 text-sm font-semibold text-heading">{t('services.requiredDocs')}</h3>
                         <ul className="space-y-1.5">
-                          {selected.requiredDocs.map((doc, i) => (
+                          {(t(`services.items.${selected.id}.docs`, { returnObjects: true }) as string[]).map((doc: string, i: number) => (
                             <li key={i} className="flex items-center gap-2 text-sm text-body">
                               <FileCheck className="h-3.5 w-3.5 text-civic-500" /> {doc}
                             </li>

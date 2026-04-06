@@ -45,7 +45,8 @@
       "readMore": "Read more"
     },
     "alert": {
-      "dismiss": "Dismiss"
+      "dismiss": "Dismiss",
+      "text": "E-waste collection — Saturday April 19, 9am-4pm, Community Hall Parking"
     },
     "upcomingEvents": {
       "title": "Upcoming Events"
@@ -70,7 +71,23 @@
     },
     "estimatedTime": "Estimated time",
     "requiredDocs": "Required documents",
-    "noResults": "No services found."
+    "noResults": "No services found.",
+    "items": {
+      "civil-registry": { "name": "Civil Registry", "docs": ["Identity document", "Proof of residence"] },
+      "building-permits": { "name": "Building Permits", "docs": ["Architectural plans", "Application form", "Property title"] },
+      "parking-permits": { "name": "Parking Permits", "docs": ["Vehicle registration", "Identity document"] },
+      "school-enrollment": { "name": "School Enrollment", "docs": ["Birth certificate", "Proof of residence", "Vaccination record"] },
+      "library": { "name": "Library", "docs": ["Identity document"] },
+      "extracurricular": { "name": "Extracurricular Activities", "docs": ["Medical certificate (for sports)"] },
+      "social-aid": { "name": "Social Assistance", "docs": ["Identity document", "Proof of income", "Proof of residence"] },
+      "senior-services": { "name": "Senior Services", "docs": ["Identity document"] },
+      "cultural-events": { "name": "Cultural Events", "docs": [] },
+      "venue-rental": { "name": "Venue Rental", "docs": ["Booking form", "Liability insurance"] },
+      "waste-collection": { "name": "Waste Collection", "docs": [] },
+      "green-initiatives": { "name": "Green Initiatives", "docs": ["Participation form"] },
+      "emergency-contacts": { "name": "Emergency Contacts", "docs": [] },
+      "noise-complaint": { "name": "Noise Complaint", "docs": ["Detailed description"] }
+    }
   },
   "transparency": {
     "title": "Transparency",
@@ -79,13 +96,24 @@
       "title": "Budget Breakdown",
       "comparison": "Year-over-Year Comparison",
       "current": "This year",
-      "previous": "Previous year"
+      "previous": "Previous year",
+      "categories": {
+        "Education": "Education",
+        "Infrastructure": "Infrastructure",
+        "Social": "Social",
+        "Culture": "Culture",
+        "Administration": "Administration",
+        "Safety": "Safety"
+      }
     },
     "council": {
       "title": "Municipal Council Decisions",
       "approved": "Approved",
       "rejected": "Rejected",
-      "pending": "Pending"
+      "pending": "Pending",
+      "votesFor": "For",
+      "votesAgainst": "Against",
+      "abstentions": "Abstentions"
     },
     "metrics": {
       "title": "Key Metrics",
@@ -93,6 +121,13 @@
       "budgetPerCapita": "Budget per Capita",
       "greenSpace": "Green Space per Resident",
       "satisfaction": "Satisfaction Rate"
+    },
+    "decisions": {
+      "cd-1": { "title": "Central Square Renovation", "summary": "Approval of a CHF 2.4M budget for the complete renovation of Central Square, including new lighting, benches and a fountain." },
+      "cd-2": { "title": "30 km/h Zone Near Schools", "summary": "Extension of the 30 km/h zone around primary schools and the middle school to improve child safety." },
+      "cd-3": { "title": "New Municipal Sports Centre", "summary": "Proposal to build a new sports centre with an Olympic-size swimming pool. Estimated budget: CHF 15M." },
+      "cd-4": { "title": "Solar Panel Subsidy", "summary": "Subsidy programme for the installation of solar panels on private residential rooftops." },
+      "cd-5": { "title": "Parking Privatisation", "summary": "Proposal to delegate the management of municipal car parks to a private company." }
     }
   },
   "report": {
@@ -124,7 +159,14 @@
       "resolved": "Resolved"
     },
     "recentReports": "Recent Reports",
-    "successMessage": "Your report has been submitted successfully!"
+    "successMessage": "Your report has been submitted successfully!",
+    "reports": {
+      "r-1": { "title": "Pothole on Rue de la Gare", "description": "A large pothole has formed in front of number 23, dangerous for cyclists." },
+      "r-2": { "title": "Illegal Dumping at Parc des Tilleuls", "description": "Bulky waste has been abandoned near the south entrance of the park." },
+      "r-3": { "title": "Faulty Lighting on Chemin du Lac", "description": "Three streetlights have been out for a week, making the path dangerous at night." },
+      "r-4": { "title": "Fallen Tree on Route de Meyrin", "description": "A tree fell on the pavement after Tuesday's storm, partially blocking the walkway." },
+      "r-5": { "title": "Night-time Construction at Place du Marche", "description": "Noisy construction work after 10pm for several nights in a row." }
+    }
   },
   "events": {
     "title": "Events & News",
@@ -138,7 +180,21 @@
       "community": "Community"
     },
     "upcoming": "Upcoming Events",
-    "news": "News"
+    "news": "News",
+    "items": {
+      "e-1": { "title": "Spring Music Festival", "description": "Open-air concert with local and regional artists. Free entry.", "location": "Central Square" },
+      "e-2": { "title": "Communes 10km Run", "description": "Fun run open to all. Online or on-site registration from 8am.", "location": "Start: Sports Park" },
+      "e-3": { "title": "Easter Egg Hunt", "description": "Activity for children aged 3 to 10. Snacks provided.", "location": "Parc des Tilleuls" },
+      "e-4": { "title": "Board Games Afternoon", "description": "Intergenerational meetup around board games. Tea and biscuits provided.", "location": "Community Centre" },
+      "e-5": { "title": "Community Assembly", "description": "Open assembly for all residents. Agenda: 2026 budget and infrastructure projects.", "location": "Community Hall" },
+      "e-6": { "title": "Local Art Exhibition", "description": "Exhibition of local artists. Opening night on May 4 at 6pm.", "location": "Municipal Gallery" }
+    },
+    "newsItems": {
+      "n-1": { "title": "New Cycle Lane Inaugurated", "summary": "The new 2.3 km cycle lane connecting the town centre to the train station was inaugurated this morning, improving cyclist safety.", "category": "Infrastructure" },
+      "n-2": { "title": "2026 Budget Adopted by Wide Majority", "summary": "The Municipal Council approved the CHF 40M 2026 budget, up 5% from last year. Education remains the top priority.", "category": "Politics" },
+      "n-3": { "title": "E-Waste Collection Day", "summary": "A special e-waste collection will take place on Saturday April 19 at the community hall car park, from 9am to 4pm.", "category": "Environment" },
+      "n-4": { "title": "Nursery Registration Now Open", "summary": "Applications for communal nurseries 2026-2027 are open until May 15. Form available online.", "category": "Education" }
+    }
   },
   "contact": {
     "title": "Contact & FAQ",
@@ -148,7 +204,29 @@
     "hours": "Opening Hours",
     "phone": "Phone",
     "email": "Email",
-    "address": "Address"
+    "address": "Address",
+    "departmentNames": {
+      "administration": "General Administration",
+      "education": "Education & Youth",
+      "social": "Social Services",
+      "technical": "Technical Services",
+      "culture": "Culture & Leisure"
+    },
+    "departmentHours": {
+      "administration": "Mon-Fri: 8:00am-12:00pm, 1:30-5:00pm",
+      "education": "Mon-Fri: 8:00am-12:00pm, 1:30-4:30pm",
+      "social": "Mon-Fri: 9:00am-12:00pm, 2:00-5:00pm",
+      "technical": "Mon-Fri: 7:30am-12:00pm, 1:00-4:30pm",
+      "culture": "Tue-Sat: 9:00am-12:00pm, 2:00-6:00pm"
+    },
+    "faqs": {
+      "faq-1": { "question": "How do I obtain a proof of residence?", "answer": "Go to the Services > Civil Registry page and fill in the online form. You will receive your certificate by email within 48 hours. You can also visit the counter in person with a valid ID." },
+      "faq-2": { "question": "What are the recycling centre opening hours?", "answer": "The recycling centre is open Tuesday to Saturday from 8:00am to 12:00pm and from 1:30pm to 5:30pm. Closed on Sundays, Mondays and public holidays." },
+      "faq-3": { "question": "How do I enrol my child in school?", "answer": "Enrolment is done online via the Services > School Enrollment page. You will need a birth certificate, proof of residence and a vaccination record. Deadline: before March 31 for the September term." },
+      "faq-4": { "question": "How do I report a problem in my street?", "answer": "Use our Report page to flag any issue (lighting, roads, cleanliness, etc.). You can track the progress of your report in real time." },
+      "faq-5": { "question": "Where can I find Municipal Council minutes?", "answer": "All minutes are available on the Transparency page. There you will find council decisions, voting results and detailed budgets." },
+      "faq-6": { "question": "How do I book a community hall?", "answer": "Booking requests are made via the online form on the Services > Venue Rental page. Allow at least 2 weeks' notice. Liability insurance is required." }
+    }
   },
   "footer": {
     "description": "GenCite - Your digital commune portal, designed for accessibility, transparency and citizen service.",
@@ -158,6 +236,46 @@
     "privacy": "Privacy Policy",
     "terms": "Terms of Use",
     "copyright": "All rights reserved.",
-    "designedBy": "Designed by"
+    "designedBy": "Designed by",
+    "contact": "Contact"
+  },
+  "accessibility": {
+    "title": "Accessibility Statement",
+    "intro": "GenCite is committed to making its digital services accessible to all citizens, in compliance with WCAG 2.1 Level AA guidelines.",
+    "commitmentTitle": "Our Commitment",
+    "commitmentText": "As a public service portal, we believe that access to municipal information and services is a fundamental right. We continuously work to improve the accessibility of our platform to ensure every citizen, regardless of ability, can use our services.",
+    "featuresTitle": "Accessibility Features",
+    "reportTitle": "Report an Accessibility Issue",
+    "reportText": "If you encounter an accessibility issue on our platform, contact us at accessibilite@gencite.ch. We commit to responding within 5 business days.",
+    "features": {
+      "contrast": { "title": "Contrast & Readability", "description": "Minimum 4.5:1 contrast ratio on all text. Dark and light modes available." },
+      "keyboard": { "title": "Keyboard Navigation", "description": "All interactive elements are keyboard accessible with visible focus indicators." },
+      "responsive": { "title": "Responsive Design", "description": "Interface adapted to all screens, from mobile to large displays. Zoom up to 200% without loss." },
+      "multilingual": { "title": "Multilingual", "description": "Content available in French and English. Lang attribute updated dynamically." },
+      "screenReaders": { "title": "Screen Readers", "description": "Semantic HTML, ARIA landmarks and alt attributes on all images." },
+      "reducedMotion": { "title": "Reduced Motion", "description": "Respects prefers-reduced-motion preference. Animations automatically disabled." }
+    }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: April 2026",
+    "intro": "GenCite respects your privacy and is committed to protecting your personal data in accordance with the Swiss Federal Act on Data Protection (FADP) and the General Data Protection Regulation (GDPR).",
+    "dpoContact": "DPO Contact",
+    "sections": {
+      "dataCollected": { "title": "Data Collected", "content": "We only collect data necessary for municipal services: names, addresses, contact details. No data is sold to third parties." },
+      "dataSecurity": { "title": "Data Security", "content": "Your data is encrypted in transit (TLS 1.3) and at rest. Our servers are hosted in Switzerland, in compliance with the FADP." },
+      "yourRights": { "title": "Your Rights", "content": "You have the right to access, rectify and delete your personal data. Contact our DPO at dpo@gencite.ch." },
+      "retention": { "title": "Retention", "content": "Data is retained for the duration necessary for the purposes for which it was collected, then securely deleted." }
+    }
+  },
+  "terms": {
+    "title": "Terms of Use",
+    "lastUpdated": "Last updated: April 2026",
+    "sections": {
+      "portalUsage": { "title": "Portal Usage", "content": "The GenCite portal is made available to citizens and residents of the commune. Usage is free and subject to these terms. Any abusive or fraudulent use is prohibited." },
+      "contentOwnership": { "title": "Content & Ownership", "content": "The content of this portal is the property of the commune of GenCite. Reproduction is authorized for non-commercial purposes with source attribution." },
+      "liability": { "title": "Liability", "content": "The commune strives to provide accurate and up-to-date information. However, it does not guarantee completeness or accuracy. Official procedures remain subject to verification." },
+      "applicableLaw": { "title": "Applicable Law", "content": "These terms are governed by Swiss law. Jurisdiction lies with the competent court of the canton in which the commune is located." }
+    }
   }
 }

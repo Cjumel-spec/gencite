@@ -11,25 +11,17 @@ const iconMap: Record<string, React.ComponentType<{ className?: string; style?: 
   Building2, GraduationCap, Heart, Wrench, Music,
 };
 
-const deptNames: Record<string, { fr: string; en: string }> = {
-  administration: { fr: 'Administration generale', en: 'General Administration' },
-  education: { fr: 'Education et jeunesse', en: 'Education & Youth' },
-  social: { fr: 'Affaires sociales', en: 'Social Services' },
-  technical: { fr: 'Services techniques', en: 'Technical Services' },
-  culture: { fr: 'Culture et loisirs', en: 'Culture & Leisure' },
-};
-
 const deptColors = ['#3b82f6', '#8b5cf6', '#22c55e', '#f59e0b', '#a855f7'];
 
 export default function Contact() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const [expandedFaq, setExpandedFaq] = useState<string | null>(null);
   const [faqSearch, setFaqSearch] = useState('');
 
   const filteredFaqs = faqs.filter(
     (faq) =>
-      faq.question.toLowerCase().includes(faqSearch.toLowerCase()) ||
-      faq.answer.toLowerCase().includes(faqSearch.toLowerCase())
+      t(`contact.faqs.${faq.id}.question`).toLowerCase().includes(faqSearch.toLowerCase()) ||
+      t(`contact.faqs.${faq.id}.answer`).toLowerCase().includes(faqSearch.toLowerCase())
   );
 
   return (
@@ -44,7 +36,6 @@ export default function Contact() {
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {departments.map((dept, i) => {
             const Icon = iconMap[dept.icon] || Building2;
-            const name = deptNames[dept.id]?.[i18n.language as 'fr' | 'en'] || dept.id;
             const color = deptColors[i % deptColors.length];
             return (
               <motion.div key={dept.id} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.05 }}
@@ -53,7 +44,7 @@ export default function Contact() {
                   <div className="flex h-10 w-10 items-center justify-center rounded-lg" style={{ backgroundColor: `${color}15` }}>
                     <Icon className="h-5 w-5" style={{ color }} />
                   </div>
-                  <h3 className="text-sm font-semibold text-heading">{name}</h3>
+                  <h3 className="text-sm font-semibold text-heading">{t(`contact.departmentNames.${dept.id}`)}</h3>
                 </div>
                 <div className="space-y-2.5">
                   <a href={`tel:${dept.phone.replace(/\s/g, '')}`} className="flex items-center gap-2 text-sm text-body no-underline hover:text-accent">
@@ -63,7 +54,7 @@ export default function Contact() {
                     <Mail className="h-3.5 w-3.5 text-muted" /> {dept.email}
                   </a>
                   <div className="flex items-center gap-2 text-sm text-muted">
-                    <Clock className="h-3.5 w-3.5" /> {dept.hours}
+                    <Clock className="h-3.5 w-3.5" /> {t(`contact.departmentHours.${dept.id}`)}
                   </div>
                 </div>
               </motion.div>
@@ -87,12 +78,12 @@ export default function Contact() {
               <motion.div key={faq.id} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.03 }}
                 className="rounded-xl border border-default bg-card shadow-card">
                 <button onClick={() => setExpandedFaq(isExpanded ? null : faq.id)} className="flex w-full items-center justify-between px-5 py-4 text-left" aria-expanded={isExpanded}>
-                  <span className="pr-4 text-sm font-medium text-heading">{faq.question}</span>
+                  <span className="pr-4 text-sm font-medium text-heading">{t(`contact.faqs.${faq.id}.question`)}</span>
                   {isExpanded ? <ChevronUp className="h-4 w-4 shrink-0 text-muted" /> : <ChevronDown className="h-4 w-4 shrink-0 text-muted" />}
                 </button>
                 {isExpanded && (
                   <div className="border-t border-default px-5 pb-4 pt-3">
-                    <p className="text-sm leading-relaxed text-body">{faq.answer}</p>
+                    <p className="text-sm leading-relaxed text-body">{t(`contact.faqs.${faq.id}.answer`)}</p>
                   </div>
                 )}
               </motion.div>

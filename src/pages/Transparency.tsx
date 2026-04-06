@@ -25,17 +25,18 @@ const resultStyles = {
   pending: 'text-amber-600 bg-amber-50',
 };
 
-const comparisonData = budgetCurrent.map((item, i) => ({
-  category: item.category,
-  current: item.amount / 1_000_000,
-  previous: budgetPrevious[i].amount / 1_000_000,
-}));
-
 const totalBudget = budgetCurrent.reduce((sum, item) => sum + item.amount, 0);
 
 export default function Transparency() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [expandedDecision, setExpandedDecision] = useState<string | null>(null);
+  const dateLocale = i18n.language === 'fr' ? 'fr-CH' : 'en-CH';
+
+  const comparisonData = budgetCurrent.map((item, i) => ({
+    category: t(`transparency.budget.categories.${item.category}`),
+    current: item.amount / 1_000_000,
+    previous: budgetPrevious[i].amount / 1_000_000,
+  }));
 
   return (
     <main id="main-content" className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
@@ -94,7 +95,7 @@ export default function Transparency() {
               {budgetCurrent.map((item) => (
                 <div key={item.category} className="flex items-center gap-1.5">
                   <div className="h-2.5 w-2.5 rounded-full" style={{ backgroundColor: item.color }} />
-                  <span className="text-xs text-body">{item.category}</span>
+                  <span className="text-xs text-body">{t(`transparency.budget.categories.${item.category}`)}</span>
                 </div>
               ))}
             </div>
@@ -150,8 +151,8 @@ export default function Transparency() {
                       <ResultIcon className="h-4 w-4" />
                     </div>
                     <div>
-                      <h3 className="text-sm font-semibold text-heading">{decision.title}</h3>
-                      <time className="text-xs text-muted">{new Date(decision.date).toLocaleDateString('fr-CH')}</time>
+                      <h3 className="text-sm font-semibold text-heading">{t(`transparency.decisions.${decision.id}.title`)}</h3>
+                      <time className="text-xs text-muted">{new Date(decision.date).toLocaleDateString(dateLocale)}</time>
                     </div>
                   </div>
                   <div className="flex items-center gap-2">
@@ -163,12 +164,12 @@ export default function Transparency() {
                 </button>
                 {isExpanded && (
                   <div className="border-t border-default px-4 pb-4 pt-3">
-                    <p className="mb-3 text-sm text-body">{decision.summary}</p>
+                    <p className="mb-3 text-sm text-body">{t(`transparency.decisions.${decision.id}.summary`)}</p>
                     {decision.result !== 'pending' && (
                       <div className="flex gap-4 text-xs text-muted">
-                        <span className="text-emerald-600">Pour: {decision.votesFor}</span>
-                        <span className="text-red-500">Contre: {decision.votesAgainst}</span>
-                        <span>Abstentions: {decision.abstentions}</span>
+                        <span className="text-emerald-600">{t('transparency.council.votesFor')}: {decision.votesFor}</span>
+                        <span className="text-red-500">{t('transparency.council.votesAgainst')}: {decision.votesAgainst}</span>
+                        <span>{t('transparency.council.abstentions')}: {decision.abstentions}</span>
                       </div>
                     )}
                   </div>
